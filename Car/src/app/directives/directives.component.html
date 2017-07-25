@@ -14,6 +14,23 @@
 <input type="text" [sizer]="'400px'">
 <input type="text" [sizer]="'100px'">
 </div>
+<div class="row">
+  <div class="col-md-12">
+    <h1 *ngIf="shouldShow">Structural Directive</h1><hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" *ngIf="shouldShow"> 
+    <input type="button" (click)="shouldShow = !shouldShow"/>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <ul>
+      <li *ngFor="let mob of mobiles">{{mob}}</li>
+    </ul>
+  </div>
 </div>
 </div>
 
