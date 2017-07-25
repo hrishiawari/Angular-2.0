@@ -7,6 +7,7 @@ import { CarComponent } from './car/car.component';
 import { DirectivesComponent } from './directives/directives.component';
 
 import { SizerDirective } from './directives/sizer.directive';
+import { EffectDirective } from './directives/effect.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { SizerDirective } from './directives/sizer.directive';
     CarComponent,
     DirectivesComponent,
     
-    SizerDirective
+    SizerDirective,
+    
+    EffectDirective
   ],
   imports: [
     BrowserModule
