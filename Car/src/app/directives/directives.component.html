@@ -12,7 +12,14 @@
   <div class="row">
 <div class="col-md-12">
 <input type="text" [sizer]="'400px'">
-<input type="text" [sizer]="'100px'">
+<input type="text" value="new" sizer>
+</div>
+<div class="row">
+  <div class="col-md-3">
+    <ul>
+      <li *ngFor="let mob of mobiles">{{mob}}</li>
+    </ul>
+  </div>
 </div>
 <div class="row">
   <div class="col-md-12">
@@ -25,14 +32,17 @@
     <input type="button" (click)="shouldShow = !shouldShow"/>
   </div>
 </div>
+</div>
+<div class="row">
+<div class="col-md-12">
+  <h1 *ngIf="Show">Structural Directives</h1>
+</div>
+</div>
 <div class="row">
   <div class="col-md-12">
-    <ul>
-      <li *ngFor="let mob of mobiles">{{mob}}</li>
-    </ul>
+    <input type="text" *ngIf="Show">
+    <input type="button" (click)="Show = !Show"/>
   </div>
 </div>
-</div>
-
 
 </div>

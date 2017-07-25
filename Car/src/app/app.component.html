@@ -5,12 +5,17 @@
   </h1>
   <div class="container">
       <div class="row">
-    <div class="col-md-3">
+  <div class="col-md-3">
     <app-car (imgEv)="imgVal=$event"></app-car>
 </div>
-<div class="col-md-9">
-  <app-directives></app-directives>
+<div class="col-md-9" style="border:2px solid black">
+  
   <app-engine [imgNm]="imgVal"></app-engine><br>
+</div>
+<div class="row">
+  <div class="col-md-12">
+<app-directives></app-directives>
+</div>
 </div>
 
 

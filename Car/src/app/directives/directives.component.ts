@@ -8,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class DirectivesComponent implements OnInit {
   xyz: boolean;
   pqr: boolean;
+  mobiles=[
+`Android`,
+`iOS`,
+`Windows`,
+`RiM`,
+
+  ];
   constructor() { }
 
   ngOnInit() {
