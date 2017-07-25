@@ -1,0 +1,10 @@
+li { cursor: pointer;
+    background-color:gray;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:oblique;
+    
+ }
+ li:hover{
+     color: red;
+ }
