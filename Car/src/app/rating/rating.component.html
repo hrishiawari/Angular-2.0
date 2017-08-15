@@ -1,0 +1,17 @@
+<div class="row">
+   <div class="col-md-12">
+     <h1>Structural Directives</h1>
+   </div>
+ </div>
+ 
+ <div class="row" *ngFor="let rat of reviews">
+   <div class="col-md-12 well">
+     <div>
+       {{rat.review}}
+       {{rat.rating}}
+     </div>
+      <rating [(ngModel)]="rat.rating" [max]="10" ></rating> 
+     <div class="pull-right"><b>{{rat.rating}}</b></div>
+   </div> 
+ </div>
+  

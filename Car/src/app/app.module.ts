@@ -17,6 +17,11 @@ import { TableComponent } from './table/table.component';
 // import { NavBarDirective } from './drectives/nav-bar.directive';
  //import { NavBarCompComponent } from './drectives/nav-bar-comp.component';
  import { Ng2TableModule } from 'ng2-table/ng2-table';
+import { RatingComponent } from './rating/rating.component';
+import {RatingModule} from 'ng2-rating';
+import{FormsModule}from '@angular/forms';
+
+ 
  //import { ExtraTabComponent } from './drectives/extra-tab.component';
  //import {RatingModule} from 'ng2-rating'
 @NgModule({
@@ -25,17 +30,21 @@ import { TableComponent } from './table/table.component';
     EngineComponent,
     CarComponent,
     DirectivesComponent,
-  
+    
     SizerDirective,
     
     EffectDirective,
     
     TableComponent,
+    
+    RatingComponent,
       // Ng2SmartTableModule
   ],
   imports: [
     BrowserModule,
      Ng2TableModule,
+     RatingModule,
+     FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
