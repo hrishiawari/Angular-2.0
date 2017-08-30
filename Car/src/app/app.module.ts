@@ -20,6 +20,7 @@ import { TableComponent } from './table/table.component';
 import { RatingComponent } from './rating/rating.component';
 import {RatingModule} from 'ng2-rating';
 import{FormsModule}from '@angular/forms';
+import { ServiceCompComponent } from './service-comp/service-comp.component';
 
  
  //import { ExtraTabComponent } from './drectives/extra-tab.component';
@@ -38,6 +39,8 @@ import{FormsModule}from '@angular/forms';
     TableComponent,
     
     RatingComponent,
+    
+    ServiceCompComponent,
       // Ng2SmartTableModule
   ],
   imports: [
